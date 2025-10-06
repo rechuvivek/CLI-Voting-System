@@ -97,5 +97,10 @@ def main():
         print(f"Vote % :{result['votePercent']}")
         print(f"Lead:{result['lead']}")
 
+    if results:
+        winner = results[0]
+        print(f"Winner: {winner['name']} with {winner['valid']} valid votes ({winner['votePercent']:.2f}%)")
+
+
 if __name__ == "__main__":
     main()
